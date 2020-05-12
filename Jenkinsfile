@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('bye') {
+      steps {
+        sh 'ps aux'
+      }
+    }
+
   }
 }
