@@ -7,9 +7,14 @@ pipeline {
       }
     }
 
-    stage('bye') {
+    stage('compile') {
       steps {
-        sh 'ps aux'
+        sh '''ls
+echo "............"
+javac HelloWorld.java
+echo "............"
+java HelloWorld
+'''
       }
     }
 
