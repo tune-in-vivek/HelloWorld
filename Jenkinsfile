@@ -12,7 +12,7 @@ ls'''
     stage('compile') {
       agent {
         docker {
-          image 'ubuntu'
+          image 'openjdk'
         }
 
       }
