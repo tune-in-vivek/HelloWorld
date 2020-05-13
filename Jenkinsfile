@@ -18,7 +18,9 @@ ls'''
       }
       steps {
         sh '''hostname
-ls'''
+ls
+javac HelloWorld.java
+java HelloWorld'''
       }
     }
 
