@@ -23,5 +23,11 @@ java HelloWorld'''
       }
     }
 
+    stage('') {
+      steps {
+        archiveArtifacts 'HelloWorld.class'
+      }
+    }
+
   }
 }
