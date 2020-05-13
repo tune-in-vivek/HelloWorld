@@ -4,19 +4,19 @@ pipeline {
     stage('Hello') {
       agent any
       steps {
-        echo 'Hello World'
+        sh 'host'
       }
     }
 
     stage('compile') {
+      agent {
+        docker {
+          image 'ubuntu'
+        }
+
+      }
       steps {
-        sh '''ls
-echo "............"
-whoami
-#javac HelloWorld.java
-echo "............"
-#java HelloWorld
-'''
+        sh 'host'
       }
     }
 
