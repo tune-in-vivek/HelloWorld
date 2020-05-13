@@ -2,12 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Hello') {
-      agent {
-        docker {
-          image 'ubuntu'
-        }
-
-      }
+      agent any
       steps {
         echo 'Hello World'
       }
@@ -17,9 +12,10 @@ pipeline {
       steps {
         sh '''ls
 echo "............"
-javac HelloWorld.java
+whoami
+#javac HelloWorld.java
 echo "............"
-java HelloWorld
+#java HelloWorld
 '''
       }
     }
