@@ -17,8 +17,7 @@ ls'''
 
       }
       steps {
-        sh '''hostname
-ls
+        sh '''ls
 javac HelloWorld.java
 java HelloWorld'''
       }
