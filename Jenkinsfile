@@ -20,11 +20,6 @@ ls'''
         sh '''ls
 javac HelloWorld.java
 java HelloWorld'''
-      }
-    }
-
-    stage('') {
-      steps {
         archiveArtifacts 'HelloWorld.class'
       }
     }
