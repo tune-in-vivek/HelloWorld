@@ -4,7 +4,7 @@ pipeline {
     stage('Hello') {
       agent any
       steps {
-        sh 'host'
+        sh 'hostname'
       }
     }
 
@@ -16,7 +16,7 @@ pipeline {
 
       }
       steps {
-        sh 'host'
+        sh 'hostname'
       }
     }
 
