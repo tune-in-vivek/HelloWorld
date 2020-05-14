@@ -1,5 +1,5 @@
 // local changes
-// more changes from github
+// more local changes
 public class HelloWorld {
 
     public static void main(String[] args) {
